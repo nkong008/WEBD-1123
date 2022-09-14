@@ -1,7 +1,7 @@
 let drink = "energy drink";
 let lyrics ="";
 let cans = 99;
-let paragragh = document.getElementById"one");
+let paragragh = document.getElementById("one");
 while (cans > 0){
     
     lyrics = lyrics + cans + " cans of "
