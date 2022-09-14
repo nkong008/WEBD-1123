@@ -8,12 +8,11 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
   background-color: white;
 }
 
 #container1 {
-  background-color: #adbde6;
+  background-color: #d1cdff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,6 +22,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 90vh;
 }
 
 h1 {
@@ -35,5 +35,34 @@ h1 {
   background-color: #A9C9FF;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#A9C9FF), to(#FFBBEC));
   background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+  height: 100vh;
+}
+
+nav ul {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: 0 0.5em;
+  font-size: 2em;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #84c3ec;
 }
 /*# sourceMappingURL=style.css.map */

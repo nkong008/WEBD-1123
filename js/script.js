@@ -1,4 +1,4 @@
-gsap.registerPlugin(scrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 const container1 = document.getElementById("container1");
 const container2 = document.getElementById("container2");
 //const container = document.querySelectorAll("meta")
@@ -11,21 +11,19 @@ let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: container2, 
         start: "top 75%",
-        end: "bottom bottom"
-    }
+        end: "bottom bottom",
+        markers: {
+            startColor: "red",
+            endColor: "green",
+            fontSize: "18px",
+            fontWeight: "bold",
+            indent: 20
+    },
+    scrub:true
+}
 });
-scrollTrigger; {
-    trigger; container2,
-start;  "75%",
-end; "bottom button"
-markers; {
-    startcolors; "red",
-    endcolor; "green",
-    fontsize; "18px",
-    fontweight; "bold",
-    index; 20,
-}
-}
+
+
 tl2.fromTo(
     container2, 
     {
@@ -37,6 +35,6 @@ tl2.fromTo(
         
             autoAlpha: 1, 
             duration: 3
-            
+        
     }
 )
